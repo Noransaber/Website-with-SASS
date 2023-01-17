@@ -1,0 +1,164 @@
+
+/* Start Slider */
+.slider{
+    blockquote {
+        width: 80%;
+        text-align: center;
+        line-height: 1.7;
+        letter-spacing: -1px;
+        margin: 30px auto;
+        
+        font: {
+        size: 20px;
+        style:italic
+        }
+    }
+
+    img{
+        max-width: 100%;
+        height: 600px;
+    }
+    .bullets {
+        text-align: center;
+
+    }
+    li {
+        cursor: pointer;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid $greyColor;
+        &:hover,
+        &.active {
+            border:1px solid $yellowColor
+
+        }
+    }
+}
+
+/* End Slider */
+
+/* Start Services */
+.services {
+
+    .box {
+        @media #{$minMedium} {
+            float: $float-left;
+            width: (100% / 3);
+            &:not(:last-of-type) {
+                padding-right: 20px;
+            }
+
+        }
+        @media #{$maxSmall} {
+            i {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        .services-title{
+            margin-right: 5px;
+            margin-left: 5px;
+            font-size: 20px;
+            i{ color: $yellowColor;
+                font-size: 18px;
+
+            }
+         }
+         .services-desc{
+            font-size: 15px;
+            color: $greyColor;
+
+         }
+         .link{
+            color: $yellowColor;
+            text-decoration: none;
+
+         }
+    }
+
+}
+/* end Services */
+/* Start Players */
+.players {
+    .box{
+        @media #{$minSmall} {
+            float: $float-left;
+            width: (100% / 2);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        @media #{$minMedium} {
+            width: (100% / 3);
+            float: $float-left;
+            text-align: $text-left;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media #{$minLarge} {
+            width: (100% / 5);
+        }
+        @media #{$maxSmall} {
+            margin-bottom: 40px;
+         
+        }
+
+        }
+        
+        .players-title{
+            font-size: 16px;
+            color: $greyColor;
+            font-weight: normal;
+        span{
+            font-size: 16px;
+            color: $greyColor;
+            font-weight: bold;
+
+        }
+        }
+        .players-desc{
+            color: $greyColor;
+            line-height: 1.5;
+            font-size: 13px;
+            margin-right: 10px;
+
+        }
+        .link{
+            text-decoration: none;
+            color: $yellowColor;
+            font-size: 14px;
+            cursor: pointer;
+
+        }
+    }
+/* end Players */
+
+/* Start lorem*/ 
+.lorem{
+    .box{
+        overflow: hidden;
+        @media #{$minMedium} {
+            float: $float-left;
+            width: (100% / 3);
+            img{
+                max-width: 100%;
+                height: 300px;
+    
+            }
+        }
+        @media #{$maxSmall} {
+            display: block;
+            float: none;
+            margin-bottom: 40px;
+            img{
+                max-width: 100%;
+                height: 300px;
+    
+            }
+        }
+    }
+}
+/* End lorem*/ 

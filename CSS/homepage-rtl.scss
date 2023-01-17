@@ -1,0 +1,19 @@
+$float-left: right;
+$float-right: left;
+
+$text-right:left;
+$text-left:right;
+
+
+.header {
+    .logo{
+        float: $float-left;
+        width: 30%;
+
+    }
+}
+
+.navbar {
+    float: $float-left;
+    width: 70%;
+}

@@ -1,0 +1,83 @@
+.header {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid $yellowColor;
+    .logo{
+        position: relative;
+        float: $float-left;
+        width: 30%;
+        @media #{$minSmall} {
+            width: 100%;
+            text-align: center;
+            float: none;
+        }
+        @media #{$minMedium} {
+            float: $float-left;
+            width: 30%;
+            text-align: $text-left;
+       
+        }
+        @media #{$maxSmall} {
+            width: 100%;
+            text-align: center;
+            float: none;
+       
+        }
+
+    }
+    h2{
+        margin-bottom: 0;
+        margin-top: 10px;
+
+    }
+    p{
+        color: $greyColor;
+        font-size: 12px;
+    }
+}
+
+.navbar {
+    overflow: hidden;
+    float: $float-left;
+    width: 70%;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    @media #{$minSmall} {
+        width: 100%;
+        float: none;
+    }
+    @media #{$minMedium} {
+        float: $float-left;
+        width: 70%;
+        margin-top: 1em;
+   
+    }
+    @media #{$maxSmall} {
+        width: 100%;
+        text-align: center;
+        float: none;
+   
+    }
+
+
+    li {
+        padding: 15px 20px;
+        width: 20%;
+        float: left;
+        font-size: 18px;
+        text-align: center;
+        @media #{$maxSmall} {
+           font-size: 12px;
+       
+        }
+
+    }
+    a{
+       
+        text-decoration: none;
+        color: black;
+        &:hover {
+            color: $yellowColor;
+        }
+    }
+}

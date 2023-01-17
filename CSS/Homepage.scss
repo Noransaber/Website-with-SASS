@@ -1,0 +1,28 @@
+
+// import variables => you should import variables at first
+@import "./SASS/helpers/variables" ;
+
+// import variables + mixins
+@import "./SASS/helpers/mixin" ;
+
+// import header
+@import "./SASS/layout/header" ;
+
+// import homePage
+@import "./SASS/Pages/homepage";
+
+// import Global
+@import "./SASS/Pages/global";
+
+// import grid system
+@import "./SASS/layout/grid" ;
+
+// import headings
+@import "./SASS/compnents/headings";
+
+// import any components 
+@import "./SASS/compnents/button"  ;
+
+// import footer
+@import "./SASS/layout/_footer.scss" ;
+
